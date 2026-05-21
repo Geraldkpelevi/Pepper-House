@@ -1,0 +1,9 @@
+mongodb+srv://Gerald:<3701Gerald>@cluster0.hiq0cwz.mongodb.net/?appName=Cluster0
+
+database name : FoodApp
+collection name : users 
+
+username : Geraldo
+password : Gerald
+
+mongodb+srv://Geraldo:Gerald@cluster0.hiq0cwz.mongodb.net/?appName=Cluster0
