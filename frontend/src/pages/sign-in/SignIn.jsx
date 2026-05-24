@@ -21,7 +21,7 @@ function SignIn({login}) {
         <div className="col-md-6 col-lg-4">
           <div className="card shadow">
             <div className="card-body">
-              <h2 className="card-title text-center mb-4">Sign In</h2>
+              <h2 className="card-title text-center mb-4" style={{color:"tomato"}}>Sign In</h2>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="mb-3">
                   <label htmlFor="username" className="form-label">
