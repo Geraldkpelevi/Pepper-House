@@ -57,7 +57,7 @@
   color: tomato;
 }
 
-.logoutbuton{
+.logoutbuton {
   background-color: darkred;
   color: white;
   border: none;
@@ -65,23 +65,70 @@
   border-radius: 5px;
   cursor: none;
 }
-.profile-icon{
+.profile-icon {
   font-size: 24px;
   color: tomato;
-  cursor: pointer;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
 }
-.profile-icon i{
+.profile-icon i {
   color: tomato;
   gap: 15px;
   padding: 10px;
-  margin-left: 20px;  
+  margin-left: 20px;
 }
-.profile-icon a:hover{
+.profile-icon a:hover {
   text-decoration: none;
   color: tomato;
   background-color: white;
+}
+.profile-dropdown-container {
+  position: relative;
+}
+.profile-btn {
+  background: transparent;
+  border: none;
+  color: tomato;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  min-width: 130px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+.profile-dropdown.show {
+  display: flex;
+}
+.profile-dropdown a,
+.profile-dropdown button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  border: none;
+  background: transparent;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  background: #f8f4f0;
+}
+.profile-dropdown button {
+  font-size: 1rem;
 }

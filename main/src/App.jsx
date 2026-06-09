@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <Navbar isLoggedIn={isLoggedIn} logout={logout} />
-      <Routing login={login} />
+      <Routing login={login} logout={logout} />
     </div>
   );
 }

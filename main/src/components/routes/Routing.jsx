@@ -12,7 +12,7 @@ import ProfileDetails from "../profile-details/ProfileDetails";
 import Menu from "../../pages/menu/Menu";
 import Profile from "../../pages/profile/Profile";
 
-function Routing({ login }) {
+function Routing({ login, logout }) {
   const routes = [
     {
       path: "/sign-in",
@@ -60,7 +60,7 @@ function Routing({ login }) {
     },
     {
       path: "/profile",
-      element: <Profile />,
+      element: <Profile logout={logout} />,
     },
   ];
   return (

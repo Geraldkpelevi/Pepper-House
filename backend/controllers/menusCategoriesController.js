@@ -4,7 +4,7 @@ const { connectToMongodb } = require("../model/dataBase");
 function getAllMenusCategories(req, res) {
   getAllMenusData()
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       res.json({ ok: true, statusCode: 200, data: data });
     })
     .catch((err) => {
