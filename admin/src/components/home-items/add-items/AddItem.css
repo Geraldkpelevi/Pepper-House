@@ -1,0 +1,177 @@
+.update-product-container {
+  min-height: 70vh;
+  padding: 50px;
+  background: #fef8f8;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.update-product-card {
+  width: 100%;
+  max-width: 550px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+}
+
+.update-product-card h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #7c2230;
+  margin-bottom: 12px;
+  font-family: Georgia, serif;
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  color: #5e4f55;
+  margin-bottom: 40px;
+}
+
+.update-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7c2230;
+  margin-bottom: 12px;
+  font-family: Georgia, serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  background: #fff8f8;
+
+  border: 1px solid #eadede;
+
+  border-radius: 24px;
+
+  padding: 18px 24px;
+
+  font-size: 1.1rem;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.form-group input {
+  height: 70px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 220px;
+  padding-top: 20px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #a92f43;
+  box-shadow: 0 0 0 4px rgba(169, 47, 67, 0.08);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.upload-box {
+  border: 2px dashed #e6d6d6;
+  border-radius: 24px;
+  background: #fff8f8;
+  padding: 24px;
+}
+
+.upload-box input {
+  border: none;
+  background: transparent;
+  padding: 0;
+  height: auto;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.cancel-btn,
+.update-btn {
+  border: none;
+  cursor: pointer;
+
+  padding: 14px 28px;
+
+  border-radius: 12px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.cancel-btn {
+  background: #ececec;
+  color: #444;
+}
+
+.cancel-btn:hover {
+  background: #dfdfdf;
+}
+
+.update-btn {
+  background: #7c2230;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #671c27;
+}
+
+@media (max-width: 768px) {
+  .update-product-card {
+    padding: 25px;
+  }
+
+  .update-product-card h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .update-btn {
+    width: 100%;
+  }
+}
