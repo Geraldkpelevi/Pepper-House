@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  overflow: hidden;
+}
+.link-section {
+  height: 100%;
+  overflow: hidden;
+}
+.components {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
