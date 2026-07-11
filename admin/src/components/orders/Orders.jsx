@@ -1,8 +1,18 @@
-
 function Orders() {
   return (
-    <div>Orders</div>
-  )
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "250px",
+        color: "tomato",
+        fontSize: "50px",
+      }}
+    >
+      This is under development{" "}
+    </div>
+  );
 }
 
-export default Orders
+export default Orders;

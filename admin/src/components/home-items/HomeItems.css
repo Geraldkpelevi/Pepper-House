@@ -6,7 +6,7 @@
   gap: 20px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
 }
 .home-items div:nth-child(1) {
   display: flex;
@@ -28,7 +28,10 @@
 }
 .items-list {
   width: 100%;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
   overflow-x: auto;
+  padding: 0 20px 20px;
 }
 
 .items-table {
@@ -57,4 +60,8 @@
 
 .items-table th {
   font-weight: 200;
+}
+.bi{
+  padding: 8px;
+  margin-left: 20px;
 }
