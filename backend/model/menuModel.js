@@ -7,7 +7,7 @@ function getAllMenusData() {
 
 function createMenusData(newMenusCategoryData) {
   const menuCollection = connectToMongodb("FoodApp", "menusCategories");
-  return menuCollection1.insertOne(newMenusCategoryData);
+  return menuCollection.insertOne(newMenusCategoryData);
 }
 
 module.exports = { getAllMenusData, createMenusData };
